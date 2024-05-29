@@ -6,21 +6,14 @@ required_providers {
     source  = "hashicorp/random"
     version = "3.5.1"
   }
-
-  aws = {
-      source = "hashicorp/aws"
-      version = "3.32.0"
-    }
 }
 
 provider "random" "this" {}
-provider "aws" "this" {}
 
 component "rds" {
   source = "./rds"
 
   providers = {
     random = provider.random.this
-    aws = provider.aws.this
   }
 }
