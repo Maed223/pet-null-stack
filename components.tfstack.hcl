@@ -14,9 +14,7 @@ required_providers {
 }
 
 provider "random" "this" {}
-provider "aws" "this" {
-  region = "us-east-2"
-}
+provider "aws" "this" {}
 
 component "rds" {
   source = "./rds"
