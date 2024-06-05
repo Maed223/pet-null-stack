@@ -17,3 +17,11 @@ component "rds" {
     random = provider.random.this
   }
 }
+
+component "has_nested_deprecation" {
+  source = "./hash-nested-deprecation"
+
+  providers = {
+    random = provider.random.this
+  }
+}
