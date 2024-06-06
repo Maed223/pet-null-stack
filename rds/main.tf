@@ -13,11 +13,6 @@ module "rds-stacks-test" {
   version = "1.0.4"
 }
 
-module "kubeadm-token" {
-  source  = "scholzj/kubeadm-token/random"
-  version = "1.2.0"
-}
-
 output "x" {
   value = "test"
 
