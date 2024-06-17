@@ -1,4 +1,4 @@
 module "stack-mod" {
-  source  = "app.staging.terraform.io/example-org-6dff95/stack-mod/root"
+  source  = "app.staging.terraform.io/markdecrane/stack-mod/root"
   version = "1.0.0"
 }
