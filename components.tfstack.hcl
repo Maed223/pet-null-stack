@@ -10,14 +10,6 @@ required_providers {
 
 provider "random" "this" {}
 
-variable "prefix" {
-  type = string
-}
-
-variable "instances" {
-  type = number
-}
-
 component "rds" {
   source = "./rds"
 
