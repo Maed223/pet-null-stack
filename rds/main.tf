@@ -12,7 +12,11 @@ module "rds-stacks-test" {
   version = "1.0.0"
 }
 
-output "x" {
-  value = "test"
+variable "prefix" {
+  type = string
+}
+
+output "prefix" {
+  value = var.prefix
 
 }

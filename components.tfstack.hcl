@@ -10,11 +10,23 @@ required_providers {
 
 provider "random" "this" {}
 
+variable "prefix" {
+  type = string
+}
+
+variable "instances" {
+  type = number
+}
+
 component "rds" {
   source = "./rds"
 
   providers = {
     random = provider.random.this
+  }
+
+  inputs = {
+    prefix = var.prefix
   }
 }
 
@@ -23,5 +35,9 @@ component "has_nested_deprecation" {
 
   providers = {
     random = provider.random.this
+  }
+
+  inputs = {
+    instances = var.instances
   }
 }
