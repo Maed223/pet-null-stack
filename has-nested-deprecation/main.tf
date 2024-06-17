@@ -17,5 +17,6 @@ variable "instances" {
 }
 
 resource "random_pet" "this" {
+  prefix = "complex"
   length = var.instances
 }
