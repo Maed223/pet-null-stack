@@ -27,6 +27,7 @@ component "rds" {
 
   inputs = {
     prefix = var.prefix
+    instances = var.instances
   }
 }
 
@@ -38,6 +39,7 @@ component "has_nested_deprecation" {
   }
 
   inputs = {
+    prefix = var.prefix
     instances = var.instances
   }
 }

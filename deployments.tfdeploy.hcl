@@ -8,3 +8,9 @@ deployment "one" {
   }
 }
 
+deployment "two" {
+    variables = {
+    prefix           = "simple"
+    instances        = 8
+  }
+}

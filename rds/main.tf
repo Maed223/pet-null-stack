@@ -16,7 +16,11 @@ variable "prefix" {
   type = string
 }
 
+variable "instances" {
+  type = number
+}
+
 resource "random_pet" "this" {
   prefix = var.prefix
-  length = 3
+  length = var.instances
 }
