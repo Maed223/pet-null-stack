@@ -16,6 +16,6 @@ variable "instances" {
   type = number
 }
 
-output "instances" {
-  value = var.instances
+resource "random_pet" "this" {
+  length = var.instances
 }

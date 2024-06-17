@@ -16,7 +16,6 @@ variable "prefix" {
   type = string
 }
 
-output "prefix" {
-  value = var.prefix
-
+resource "random_pet" "this" {
+  length = length(var.prefix)
 }
