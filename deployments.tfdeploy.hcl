@@ -3,14 +3,14 @@
 
 deployment "one" {
     variables = {
-    prefix           = "complex"
-    instances        = 3
-  }
+        prefix           = "complex"
+        instances        = 3
+    }
 }
 
 deployment "two" {
     variables = {
-    prefix           = "simple"
-    instances        = 8
-  }
+        prefix           = "simple"
+        instances        = 8
+    }
 }
